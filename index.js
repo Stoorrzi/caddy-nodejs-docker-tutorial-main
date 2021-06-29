@@ -3,7 +3,7 @@ import http, { IncomingMessage, ServerResponse } from "http";
 const host = "0.0.0.0";
 const port = 4000;
 
-const requestListener = function (req: IncomingMessage, res: ServerResponse) {
+const requestListener = function (req, res) {
   res.writeHead(200);
   res.end("Hello world");
 };
