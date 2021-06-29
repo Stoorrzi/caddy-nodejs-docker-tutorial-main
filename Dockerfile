@@ -8,7 +8,7 @@ RUN npm install
 ADD ./* $HOME/src/
 
 # Build the appliction
-RUN npm run-script build
+RUN npm install
 
 # Run the built application
 CMD ["node", "build"]
