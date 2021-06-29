@@ -9,10 +9,7 @@ app.use(cors())
 
 
 app.get("", function (req, res) {
-  const obj = {
-    status: "online",
-  };
-  res.send(JSON.stringify(obj));
+  res.send("Test");
 });
 
 
