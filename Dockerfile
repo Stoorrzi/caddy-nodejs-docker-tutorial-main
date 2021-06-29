@@ -5,7 +5,7 @@ COPY package.json /app
 
 RUN npm install
 
-COPY . /app
+ADD ./* $HOME/src/
 
 # Build the appliction
 RUN npm run-script build
