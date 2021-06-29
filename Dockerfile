@@ -18,7 +18,7 @@ RUN rm -rf /src/node_modules && cp -a /tmp/node_modules /src/
 WORKDIR /src
 
 # Build the appliction
-RUN npm run-script build
+RUN npm install
 
 # Run the built application
-CMD ["node", "build/index.js"]
+CMD ["node", "build"]
