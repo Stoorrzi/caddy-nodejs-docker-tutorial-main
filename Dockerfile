@@ -11,8 +11,6 @@ RUN cd /tmp && npm install -q
 
 ADD ./ /src
 
-# Copy to dependancies to the src directory
-RUN rm -rf /src/node_modules && cp -a /tmp/node_modules /src/
 
 WORKDIR /src
 
